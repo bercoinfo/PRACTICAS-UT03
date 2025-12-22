@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        #capa1 {
+            position: absolute;
+            background-color: lightgreen;
+            border: 1px solid blue;
+            top: 100px;
+            left: 50px;
+        }
+        #contenedor {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            border: 2px dashed red;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Parrafo 1</p>
+        <div id="contenedor">
+            <div id="capa1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsum accusantium magni sapiente incidunt repudiandae quaerat laboriosam maiores aliquam, officia modi dolorem in nostrum ad dicta nisi temporibus assumenda laborum.
+            </div>   
+        </div>
+    <p style="background-color: violet;">
+        Parrafo 2
+    </p>
+</body>
+</html>
