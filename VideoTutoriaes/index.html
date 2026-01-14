@@ -5,45 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Tutoriales UT03-CSSII</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
         *{ margin: 0%;}
         div {
             display: flex;
             justify-content: center;    
             align-content: center;
-            padding: 30px;
+            padding: 20px;
         }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-image: url(fondo.png);
         }
-        /*
-        #menu {
-            float: left;
+        p#Materias {
+            text-align: center;
+            font-size: 60px;
+            font-family: "UnifrakturMaguntia", cursive;
+            font-style: normal;
+            color: aliceblue;
+            
             padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
         }
-        #videos {
-            float: left ;
-            margin-left: 300px;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-        }
-        */
         h3 {
             display: flex;
             justify-content: center;
-            padding: 20px;
+            padding: 10px;
             text-shadow: 2px 2px 4px #161515;
             color: aliceblue;
         }
         h1 {
-            text-shadow: 2px 2px 4px #000000;
-            padding: 20px;
-            background-color: lightgoldenrodyellow;
-            text-align: center;
+           font-family: "DM Serif Text", serif;
+           color: antiquewhite;
+           font-weight: 600;
+            font-style: normal;
+            padding: 40px;
+           text-align: center;
         }
         li {color: aliceblue; 
         }
@@ -65,14 +64,23 @@
             text-align: center;
         }
         a {color: white;}   
-    
+        footer {
+            background-color: gray;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: white;
+        }
         
         
     </style>
 </head> 
 <body>
+    <header>
     <h1>Video Tutoriale UT03- CSSII</h1>
-    <h3><a href="https://drive.google.com/file/d/1ZCl7Kwt4k41c-Ml92AzIwAxzz4PDF42w/view?usp=sharing">Resumen CSS ( Chuleta )</a></h3>
+    </header>
+    <section id="materias">
+    <p id="Materias">Materias impartidas</p>
     <div  id = "menu">
         <ul>
             <li>
@@ -105,6 +113,10 @@
             </li>
         </ul>
     </div>
+    </section>
+    <h3><a href="https://drive.google.com/file/d/1ZCl7Kwt4k41c-Ml92AzIwAxzz4PDF42w/view?usp=sharing">Resumen CSS ( Chuleta )</a></h3><br>
+    <section id="practicas">
+        <h3>Listado de videos formativos y practivas desrrolladas</h3>
     <div id = "videos">
         <table>
             <tr>
@@ -161,5 +173,9 @@
         </table>
 
     </div>
+    </section>
+    <footer>
+        <h3>Desarrollado por: Jose Carlos Ruiz Becerra &copy; 2024</h3>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ágora Estudio de Arquitectura</title>
+    <style>
+        * { margin: 0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;}
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #e02121;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+         nav a:hover {
+            color: yellow;
+        }
+        header {
+        background-image: url(./images/plano.avif);
+        background-size:cover;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        } 
+        #Caja_central  {
+            text-align: center;
+        }
+        header h1 {
+            color: yellow;
+            font-size: 4em;
+            text-shadow: 3px 3px 5px black;
+            background-size: cover;
+        }
+        #contenedor-quienes {
+            display: flex;
+        }
+        #contenedor-quienes #izquierda {
+            padding: 10px;
+            text-align: left;
+            width: 50%;
+        } 
+        #contenedor-quienes #derecha {
+            width: 50%;
+            text-align: center;
+        } 
+        #contenedor-quienes #derecha img {
+            width: 50%;
+            height: auto;
+        }
+        .titulo {
+            text-align: center;
+            padding: 10px;
+            font-size: 2em;
+            color: #e02121;
+        }
+        .section #quienes_somos p {
+            padding: 20px;
+            text-align: justify;
+        }
+        section#obras  {
+            padding: 20px;
+            background-color: blanchedalmond;
+            color: brown;
+        }
+        #contenedor_obras {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .obra {
+            width: 30%;
+            text-align: center;
+        }
+        .obra img {
+            width: 80%;
+        }
+        footer{
+            background-color: gray;
+            color: white;
+            padding: 20px;
+            display: flex; 
+            flex-wrap: wrap;           
+        }
+        footer #caja_superior {
+            width: 100%;
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding: 10px;
+        }
+        footer .caja_inferior {
+            width: 33%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Quienes Somos</a>
+        <a href="#">Obras</a>
+        <a href="#">Contacto</a>
+
+    </nav>
+    <header>
+        <div id="Caja_central">
+            <h1>Ágora</h1>
+            <h2>Ágora Estudio de Arquitectura</h2>
+        </div>
+    </header>
+    <section id="quienes_somos">
+        <h1 class="titulo">
+            Quienes Somos
+        </h1>
+        <div id="contenedor-quienes">
+            <div id="izquierda">
+                <h3>Un equipo multidisciplinal y profesional</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quae consequuntur. Eos maiores, recusandae, placeat quibusdam veritatis itaque minus nam ipsum hic quia pariatur consequuntur blanditiis ipsam alias esse vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quis accusamus temporibus quas officia magnam ad debitis culpa. Fugiat tempore esse perferendis aliquam assumenda soluta minus veniam ex eaque asperiores.</p>
+            </div>
+            <div id="derecha">
+                <img src="./images/equipo.webp" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section id="obras">
+        <h1 class="titulo">
+            Obras
+        </h1>
+        <div id="contenedor_obras">
+            <div class="obra">
+                <img src="./images/obra.webp" alt="">
+                <p>Tomelloso</p>
+            </div>
+            <div class="obra">
+                <img src="./images/obra.webp" alt="">
+                <p>Alcazar de San Juan</p>
+            </div>
+            <div class="obra">
+                <img src="./images/obra.webp" alt="">
+                <p>La Solana</p>
+            </div>
+            <div class="obra">
+                <img src="./images/obra.webp" alt="">
+                <p>Manzanares</p>
+            </div>
+            <div class="obra">
+                <img src="./images/obra.webp" alt="">
+                <p>Campo de Criptana</p>
+            </div>
+            <div class="obra">
+                <img src="./images/obra.webp" alt="">
+                <p>Pedro Muñoz</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p id="caja_superior">Contacta con nosotros. Trabajamos los 365 dias del año</p>
+        <div class="caja_inferior">
+            <h2>Enlaces</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="caja_inferior">
+            <h2>Estamos en</h2>
+            <p>Avda. Los Institutos s/n</p>
+            <p>13600 Alcazar de San Juan</p>
+        </div>
+        <div class="caja_inferior">
+            <h1>Email</h1>
+            <p>josecarlos@infofive.com</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
