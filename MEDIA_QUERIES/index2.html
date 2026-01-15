@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #contenedor {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea */
+        justify-content: space-between; /* ditribuye el espacio entre los elementos */
+        background-color:  lightgreen;
+        }
+    section#quienes-somos {
+            background-color: lightcoral;
+            
+        }
+        .item {
+            background-color: #3498db;
+            color: white;
+            height: 100px;
+            width: 30%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        @media (min-width: 0px) {
+            .item {
+                width: 100%; 
+            }
+        }
+        @media (min-width: 768px) {
+            .item {
+                width: 49%; 
+            }
+            #contenedor-quienes-somos {
+                    display: flex;
+                }
+        }
+        @media (min-width: 1000px) {
+            .item {
+                width: 32%; 
+            }
+        }
+</style>
+<body>
+    <section id="nuestos-proyectos">
+        <h1 class="titulo">Nuestros Proyectos</h1>
+        <div id="contenedor">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+
+    </section>
+    <section id="quienes-somos">
+        <h1 class="titulo">Quienes Somos</h1>
+        <div id="contenedor-quienes-somos">
+        <img src="./images/empresas.jpg" alt="">
+            <div>
+            <h2>Una empresa en constante evolucion</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, suscipit cumque! Est tenetur minima, dolorum illo impedit expedita assumenda consequuntur placeat, optio iusto ab atque excepturi necessitatibus non quam accusantium!</p>
+            </div>
+        </div>
+    </section>    
+</body>
+</html>

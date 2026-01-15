@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    /*EStilos base para moviles */
+    body {
+        background-color: white;
+        font-size: 14px;
+    }
+    /*Estilos para tablets y laptops */
+    @media screen and (min-width: 768px) {
+        body {
+            background-color: lightblue;
+            font-size: 16px;
+        }
+    }
+    /*Para monitores grandes */
+    @media screen and (min-width: 1200px) {
+        body {
+            background-color: lightgreen;
+        }
+    }
+
+</style>
+<body>
+    <p>Esto es una prueba de Responsive</p>
+</body>
+</html>
