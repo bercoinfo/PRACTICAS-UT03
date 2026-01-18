@@ -1,92 +1,107 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Tutoriales UT03-CSSII</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+    <title>UT03-CSSII</title>
+<style>
+    * {margin: 0;
+        color: white;
+        }
+    body{
+           background-image: url("./images/header.png");
 
-        *{ margin: 0%;}
-        #tareas {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        div {
-            display: flex;
-            justify-content: center;    
-            align-content: center;
-            padding: 20px;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-image: url(fondo.png);
-        }
-        p#Materias {
-            text-align: center;
-            font-size: 60px;
-            font-family: "UnifrakturMaguntia", cursive;
-            font-style: normal;
-            color: aliceblue;
-            
-            padding: 20px;
-        }
-        h3 {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            text-shadow: 2px 2px 4px #161515;
-            color: aliceblue;
-        }
-        h1 {
-           font-family: "DM Serif Text", serif;
-           color: antiquewhite;
-           font-weight: 600;
-            font-style: normal;
-            padding: 40px;
-           text-align: center;
-        }
-        li {color: aliceblue; 
-        }
+    }
+    nav a {
+       color: white;
+       text-decoration: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        color: white;
+        
+    }
+    section.materias h1{
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+        padding: 20px;
 
-          table,td {  
-            color: white;          
-            padding: 10px;
-            border: 1px solid black;
-            border-collapse: collapse;
-            margin-left: auto;
-            margin-right: auto;
-          }
-        th  {
-            padding: 10px;
-            border: 1px solid yellow;
-            border-collapse: collapse;
-            color: black;
-            background-color: lightgray;
-            text-align: center;
-        }
-        a {color: white;}   
-        footer {
-            background-color: gray;
-            text-align: center;
-            padding: 10px;
-            font-size: 14px;
-            color: white;
-        }
+    }
+   
+    #listado{
+        display: flex;
+        justify-content: center;
+        align-items: left   ;
+        text-align: left;
+    }
+    section.materias #listado li{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(236, 208, 83);
+        text-shadow:  2px 2px 1px black ;
         
+    }
+     section.videos h1{  
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+        padding: 40px;
+        color: rgb(203, 125, 24);
+
+    }
+    section.videos #tabla-videos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
-    </style>
-</head> 
+
+    }
+    section.videos table,tr th {
+        background-color: rgb(55, 158, 206);
+        color: rgb(203, 125, 24);
+        padding: 10px;
+        border-collapse: collapse;
+        font-size: 20px;
+
+    }
+    section.videos table,td {  
+        color: white;          
+        padding: 10px;
+        border: 3px solid rgb(255, 245, 247);
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section.videos td,a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(236, 208, 83);
+        
+    }
+    section.videos{
+        padding: 20px ;
+    }
+    footer {
+        background-color: grey;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+
 <body>
-    <header>
-    <h1>Video Tutoriale UT03- CSSII</h1>
-    </header>
-    <section id="tareas">
-    <p id="Materias">Materias impartidas</p>
-    <div  id = "menu">
-        <ul>
+    <nav>
+       <a href="https://bercoinfo.github.io/VIDEOTUTORIALES/">Videos UT01</a>
+       <a href="https://bercoinfo.github.io/PRACTICAS/Video%20Tutoriales/index.html">Videos UT02</a>
+       <a href="#">Videos UTC03</a>
+    </nav>
+    <section class="materias">
+       <h1>MATERIAS Y PROPIEDADES IMPARTIDAS</h1>
+        <div id="listado">
+            <ul>
             <li>
                 Modelo de cajas y propiedad box-sizing
             </li>
@@ -115,14 +130,22 @@
             <li>
                 Centrar elementos con flexbox
             </li>
+            <li>
+            Aplicación práctica de flexbox. ( Barra de navegación )
+            </li>
+            <li>
+                Aplicación práctica de flexbox. ( Cabecera )
+            </li>
+            <li>
+                Aplicación práctica de flexbox. ( Footer )
+            </li>
         </ul>
-    </div>
+        </div>
     </section>
-    <h3><a href="https://drive.google.com/file/d/1ZCl7Kwt4k41c-Ml92AzIwAxzz4PDF42w/view?usp=sharing">Resumen CSS ( Chuleta )</a></h3><br>
-    <section id="tareas">
-        <h3>Listado de videos formativos y practivas desrrolladas</h3>
-    <div id = "videos">
-        <table>
+    <section class="videos">
+        <h1>VIDEOS TUTORIALES y PRACTICAS</h1>
+        <div id="tabla-videos">
+             <table>
             <tr>
                 <th>VideoTutorial</th>
                 <th>Publicacion</th>
@@ -173,13 +196,19 @@
                 </td>
                 <td><a href="https://bercoinfo.github.io/PRACTICAS-UT03/EJERCICIO_MAQUETACION_CSS/">Practica en GitHub</a></td>
              </tr>
-             
+              <tr>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=qlRE7DANThQ">Aplicación práctica de flexbox. Estudio de Arquitectura ( nav, header, dos bloques)</a><br>
+                </td>
+                <td><a href="https://bercoinfo.github.io/PRACTICAS-UT03/EJERCICIO_MAQUETACION_CSS/">Practica en GitHub</a></td>
+             </tr>
         </table>
+        </div>
 
-    </div>
     </section>
     <footer>
-        <h3>Desarrollado por: Jose Carlos Ruiz Becerra &copy; 2024</h3>
+        <p>UT03-CSSII</p>
+        <p>Jose Carlos Ruiz Becerra</p>
     </footer>
 </body>
 </html>
