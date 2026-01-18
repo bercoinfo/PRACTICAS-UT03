@@ -47,9 +47,8 @@
      section.videos h1{  
         text-align: center;
         text-shadow: 2px 2px 2px black;
-        padding: 40px;
-        color: rgb(203, 125, 24);
-
+        padding: 70px;
+        color: white;
     }
     section.videos #tabla-videos{
         display: flex;
@@ -60,7 +59,7 @@
     }
     section.videos table,tr th {
        /* background-color: rgb(55, 158, 206);*/
-        color: rgb(203, 125, 24);
+        color: white;
         padding: 10px;
         border-collapse: collapse;
         font-size: 20px;
@@ -82,12 +81,41 @@
         
     }
     section.videos{
-        padding: 20px ;
+        padding: 50px ;
     }
     footer {
         background-color: grey;
         padding: 10px;
         text-align: center;
+    }
+    /* MEDIA QUERIS*/
+    /* CREAMOS UN RESPONSIVE EN EL QUE CAMBIA EL FONDO DEL NAV Y DEL FOOTER SEGUN LA RESOLUCIONA DE LA PANTALLA*/
+    /* Moviles */
+    @media (min-width: 0px) {
+        nav{
+            background-color: red;
+        }
+        footer{
+            background-color: red;
+        }
+    }
+    /* Tablets */
+    @media (min-width: 600px) {
+        nav{
+            background-color: orange;
+        }
+         footer{
+            background-color: orange
+        }
+    }  
+    /* Escritorio */
+    @media (min-width: 992px) {
+        nav{
+            background-color: green;}
+            footer{
+                background-color: green;
+            }
+        
     }
 </style>
 </head>
@@ -200,7 +228,17 @@
                 <td>
                     <a href="https://www.youtube.com/watch?v=qlRE7DANThQ">Aplicación práctica de flexbox. Estudio de Arquitectura ( nav, header, dos bloques)</a><br>
                 </td>
-                <td><a href="https://bercoinfo.github.io/PRACTICAS-UT03/EJERCICIO_MAQUETACION_CSS/">Practica en GitHub</a></td>
+                <td><a href="https://bercoinfo.github.io/PRACTICAS-UT03/EJERCICIO_MAQUETACIONII/">Practica en GitHub</a></td>
+             </tr>
+             <tr>
+                <td>
+                    <h3>Videotutoriales Diseño Responsive ( Media Queries )</h3>
+                    <a href="https://youtu.be/bS2suswdovA?si=EOqglT0pmVrtm86s">Video I</a><br>
+                    <a href="https://youtu.be/PhZVFzNpCm0"> Video II</a><br>
+                    <a href="https://youtu.be/7RT7bu7Ylac?si=3UIIPbtFcJ4K3wg4"> Video III</a><br>
+                    
+                <td><a href="https://bercoinfo.github.io/PRACTICAS-UT03/MEDIA_QUERIES/index.html">Practiva Responsive I</a></td>
+                <td><a href="https://bercoinfo.github.io/PRACTICAS-UT03/MEDIA_QUERIES/index2.html">Practiva Responsive II</a></td><br>
              </tr>
         </table>
         </div>
