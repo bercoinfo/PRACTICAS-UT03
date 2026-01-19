@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MTB-MECANIC</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+
+    * {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+    header {
+        background-image: url(./images/reparacion_heart.jpg);
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    header h1 {
+        font-family: 'Mogra', cursive;
+        font-size: 60px;
+        text-shadow: 3px 3px 5px orange;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: orange;
+        padding: 10px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    #sec-quienes-somos{
+        text-align: center;
+        padding: 20px;
+        background-color: bisque;
+    }
+    #caja_quien_somos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+   #caja_derecha_qs img{
+        width:300px;
+        height:300px;
+        border-radius: 700px;
+    }
+    #caja_izquierda_qs{
+        max-width: 500px;
+        text-align: justify;
+    }
+    .titulos{
+        
+        font-size: 40px;
+        color: orange;
+        text-shadow: 2px 2px 4px gray;
+    }
+    #caja_marcas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: bisque;
+        margin: 0;
+    }
+
+    section#marcas h1{
+        justify-content: center;
+        text-align: center;
+        background-color: bisque;
+
+    }
+    .marcas{ 
+        text-align: center;
+    }
+    .marcas img{
+        padding: 20px;
+       border-radius: 60%;
+        height: 200px;
+        width: 200px;
+    }
+    #caja {
+        background-color: orange;
+        display: flex;
+        justify-content: space-around;
+    }
+    footer {
+        background-color: orange;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer #caja_superior {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 2px solid white;
+        padding: 10px;
+    }
+  
+    footer #contenedor_pie {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+        padding: 20px;
+        color: white;
+    }
+    
+</style>
+</head>
+<body>
+    <header>
+        <h1>MTB-MECANIC</h1>
+    </header>
+    <nav>
+        <a href="#">Quienes somos</a>
+        <a href="#">Tienda</a>
+        <a href="#">Marcas</a>
+        <a href="#">Componentes</a>
+    </nav>
+    <section id="sec-quienes-somos">
+        <h1 class="titulos">Quien es MTB-MECANIC</h1>
+            <div id="caja_quien_somos">
+                    <div id="caja_izquierda_qs">
+                        <p>Somos una empresa dedicada a la reparacion pofesional de Bicicletas de Mtb. Reparamos todas las marcas. Somo expecializas en repacion de horquillas y amortiguacion. Ademas disopones de todo lo necesario para realizar un estudio de biomecanica, para tener la biccleta idal para ti.</p>
+                    </div>
+                    <div id="caja_derecha_qs">
+                        <img src="./images/biomecanica_ciclismo_3D-2.jpeg" alt="">
+                    </div>
+
+            </div>
+    </section>
+    <section id="marcas">
+            <h1 class="titulos">Marcas</h1>
+        <div id="caja_marcas">
+            <div class="marcas">
+               <img src="./images/shimano_logo.png" alt="">
+               <p>Shimano</p>
+            </div>
+            <div class="marcas">
+                <img src="./images/SRAM_Logo.png" alt="">
+                <p>Sram</p>
+            </div>
+            <div class="marcas">
+                <img src="./images/Orbea.jpg" alt="">
+                <p>Orbea</p>
+            </div>
+            <div class="marcas">
+                <img src="./images/Fox-Racing-Logo.png" alt="">
+                <p>Fox</p>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div id="caja_superior">
+            <p>Contacta con nosotros</p>
+        </div>
+        <div id="contenedor_pie">
+            <div class="redes">
+                <i class="fa fa-instagram" style="font-size:48px;color:red"></i>
+                <i class="fa fa-facebook-square" style="font-size:48px;color:blue"></i>
+                <i class="fa fa-twitter-square" style="font-size:48px;color:#1DA1F2"></i>
+            </div>
+            <div clase="direccion">
+                <p>Avd Don Antonio Huertas</p>
+                <p>13700-Tomelloso</p>
+                <p>Ciudad Real</p>
+            </div>
+            <div clase="email">
+                <p>Jose Carlos Ruiz</p>
+                <p>josecarlos@infofive.com</p>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
