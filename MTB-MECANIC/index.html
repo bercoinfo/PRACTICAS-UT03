@@ -8,6 +8,8 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
 
+   
+
     * {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
@@ -118,7 +120,31 @@
         padding: 20px;
         color: white;
     }
+    /* Media Query para poner la caja con el texto en la parte superior
+    al mostrarlo en una pantalla movil*/
+    @media screen and (max-width: 768px) {
+    header {
+        height: 100px;
+    }
+    #sec-quienes-somos h1 {
+        font-size: 30px;
+    }   
+    #caja_quien_somos {
+        flex-direction: column;
+        }
+    #caja_derecha_qs img{
+        width:200px;
+        height:200px;
+    }
     
+    .marcas img {
+        height: 150px;
+        width: 150px;
+    }
+    }
+   
+
+       
 </style>
 </head>
 <body>
@@ -175,12 +201,12 @@
                 <i class="fa fa-facebook-square" style="font-size:48px;color:blue"></i>
                 <i class="fa fa-twitter-square" style="font-size:48px;color:#1DA1F2"></i>
             </div>
-            <div clase="direccion">
+            <div class="direccion">
                 <p>Avd Don Antonio Huertas</p>
                 <p>13700-Tomelloso</p>
                 <p>Ciudad Real</p>
             </div>
-            <div clase="email">
+            <div class="email">
                 <p>Jose Carlos Ruiz</p>
                 <p>josecarlos@infofive.com</p>
             </div>
